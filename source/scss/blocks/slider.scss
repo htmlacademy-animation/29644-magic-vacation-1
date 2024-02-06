@@ -63,6 +63,14 @@
       }
     }
   }
+
+  &.swiper-slide-active,
+  &.swiper-slide-next {
+    .slider__item-text {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 }
 
 .slider__item-title {
@@ -96,6 +104,11 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  transform: translateX(100px);
+  opacity: 0;
+  transition:
+    opacity 0.3s ease-in 0.4s,
+    transform 0.3s ease-in 0.4s;
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;

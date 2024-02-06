@@ -115,6 +115,11 @@
 
   p {
     margin: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+      opacity 0.3s ease-in 0.4s,
+      transform 0.3s ease-in 0.4s;
   }
 
   svg {

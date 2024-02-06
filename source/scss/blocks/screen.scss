@@ -288,6 +288,16 @@
   }
 }
 
+
+.screen--intro {
+  &.active {
+    .intro__message p {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } 
+}
+
 .screen--story {
   background-color: $c-dark;
   background-image: url("../img/slide1.jpg"), url("../img/slide2.jpg"), url("../img/slide3.jpg"), url("../img/slide4.jpg");
@@ -309,6 +319,11 @@
   position: relative;
   background-color: $c-dark;
 
+  &.active {
+    .form__field {
+      width: calc(100% - 21rem);
+    }
+  }
   &::before {
     content: "";
     position: absolute;
