@@ -245,11 +245,11 @@
     &::after {
       content: "";
       position: absolute;
+      right: 0;
       bottom: 0;
       width: 0;
       height: 2px;
       background-color: $c-light;
-      left: 0;
       transition: color 0.3s ease-in, width 0.3s ease-in;
 
       @media (max-width: $tablet) and (orientation: portrait) {
@@ -266,8 +266,14 @@
     }
 
     &.active {
+      color: $c-purple;
+
       &::after {
-        display: block;
+        width: 100%;
+        right: auto;
+        left: 0;
+        opacity: 1;
+        background-color: $c-purple;
       }
     }
 
@@ -278,6 +284,8 @@
 
       &::after {
         width: 100%;
+        right: auto;
+        left: 0;
         opacity: 1;
         background-color: $c-purple;
       }
