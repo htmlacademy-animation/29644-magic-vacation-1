@@ -6,6 +6,10 @@
       opacity: 1;
       pointer-events: auto;
     }
+
+    .social-block__link {
+      opacity: 1;
+    }
   }
 }
 
@@ -35,6 +39,8 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
+    transition: width 0.3s ease-in,
+                height 0.3s ease-in;
   }
 
   svg {
@@ -89,6 +95,7 @@
   margin-top: 1.5rem;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease-in;
 
   @media (min-width: $stop-scaling) {
     margin-top: 15px;
@@ -168,6 +175,8 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
@@ -186,6 +195,7 @@
 
   &:hover {
     color: $c-purple;
+    opacity: 1;
   }
 
   &:focus {
@@ -207,6 +217,8 @@
   }
 
   &--fb {
+    transition-delay: 0.1s;
+
     svg {
       width: 0.8rem;
       height: 1.7rem;
@@ -219,6 +231,7 @@
   }
 
   &--insta {
+    transition-delay: 0.2s;
     svg {
       width: 1.5rem;
       height: 1.5rem;
@@ -231,6 +244,7 @@
   }
 
   &--vk {
+    transition-delay: 0.3s;
     svg {
       width: 1.7rem;
       height: 1rem;
