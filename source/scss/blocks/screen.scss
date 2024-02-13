@@ -73,10 +73,6 @@
   }
 }
 
-body.is-loaded .screen__footer {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 .screen__footer-wrapper {
   @include container;

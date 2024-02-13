@@ -1,0 +1,21 @@
+@import "keyframes.scss";
+
+body.is-loaded {
+
+  .screen__footer {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .page-header__menu {
+    opacity: 1;
+  }
+
+  .page-header__social {
+    opacity: 1;
+  }
+  //
+  //.social-block__toggler:before {
+  //  animation: sping-social  2s ease-in-out 0.3s;
+  //}
+}

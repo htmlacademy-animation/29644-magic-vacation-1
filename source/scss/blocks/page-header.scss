@@ -303,11 +303,7 @@ body.is-loaded .page-header__logo {
   }
 }
 
-body.is-loaded .page-header__menu {
-  opacity: 1;
-}
-
-.page-header__social {
+.page-header__social  {
   margin-left: 4.8rem;
   opacity: 0;
   transition: opacity 0.3s ease-in 0.5s;
@@ -326,8 +322,3 @@ body.is-loaded .page-header__menu {
     width: 100%;
   }
 }
-
-body.is-loaded .page-header__social {
-  opacity: 1;
-}
-
