@@ -1,17 +1,22 @@
 @keyframes spring-social {
-  0% {
-    width: 0;
-    height: 0;
-    background-color: red;
+  from {
+    width: 40%;
+    height: 40%;
   }
-  50% {
-    width: 112.5%;
-    height: 112.5%;
-    background-color: yellow;
-  }
-  100% {
+  to {
     width: 100%;
     height: 100%;
-    background-color: green;
+  }
+}
+
+@keyframes width-header-link {
+  from {
+    right: 0;
+    width: 0;
+  }
+  to {
+    width: 100%;
+    right: auto;
+    left: 0;
   }
 }

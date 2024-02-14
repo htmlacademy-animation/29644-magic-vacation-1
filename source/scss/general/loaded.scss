@@ -14,8 +14,12 @@ body.is-loaded {
   .page-header__social {
     opacity: 1;
   }
-  //
-  //.social-block__toggler:before {
-  //  animation: sping-social  2s ease-in-out 0.3s;
-  //}
+
+  .social-block__toggler:before {
+    animation: 1.4s cubic-bezier(0, 1.8, 1, 1.2)  0.3s spring-social;
+  }
+
+  .page-header__menu a.active:after {
+    animation: 0.5s linear  0.2s width-header-link;
+  }
 }
