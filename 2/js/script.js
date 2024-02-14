@@ -10518,25 +10518,6 @@ class FullPageScroll {
 
 /***/ }),
 
-/***/ "./source/js/modules/main.js":
-/*!***********************************!*\
-  !*** ./source/js/modules/main.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (() => {
-  let pageBody = document.getElementsByTagName('body')[0];
-  window.addEventListener('load', function () {
-    pageBody.classList.add('is-loaded');
-  });
-});
-
-
-/***/ }),
-
 /***/ "./source/js/modules/menu.js":
 /*!***********************************!*\
   !*** ./source/js/modules/menu.js ***!
@@ -10762,6 +10743,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./source/js/modules/states.js":
+/*!*************************************!*\
+  !*** ./source/js/modules/states.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (() => {
+  let pageBody = document.getElementsByTagName('body')[0];
+  let socialToggler = document.querySelector('.social-block__toggler');
+
+  window.addEventListener('load', function () {
+    pageBody.classList.add('is-loaded');
+    socialToggler.classList.add('animate');
+  });
+});
+
+
+/***/ }),
+
 /***/ "./source/js/script.js":
 /*!*****************************!*\
   !*** ./source/js/script.js ***!
@@ -10780,7 +10783,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_form_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/form.js */ "./source/js/modules/form.js");
 /* harmony import */ var _modules_social_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/social.js */ "./source/js/modules/social.js");
 /* harmony import */ var _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/full-page-scroll */ "./source/js/modules/full-page-scroll.js");
-/* harmony import */ var _modules_main__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/main */ "./source/js/modules/main.js");
+/* harmony import */ var _modules_states__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/states */ "./source/js/modules/states.js");
 // modules
 
 
@@ -10802,7 +10805,7 @@ Object(_modules_chat_js__WEBPACK_IMPORTED_MODULE_4__["default"])();
 Object(_modules_result_js__WEBPACK_IMPORTED_MODULE_5__["default"])();
 Object(_modules_form_js__WEBPACK_IMPORTED_MODULE_6__["default"])();
 Object(_modules_social_js__WEBPACK_IMPORTED_MODULE_7__["default"])();
-Object(_modules_main__WEBPACK_IMPORTED_MODULE_9__["default"])();
+Object(_modules_states__WEBPACK_IMPORTED_MODULE_9__["default"])();
 
 const fullPageScroll = new _modules_full_page_scroll__WEBPACK_IMPORTED_MODULE_8__["default"]();
 fullPageScroll.init();
