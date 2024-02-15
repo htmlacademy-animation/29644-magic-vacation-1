@@ -35,6 +35,9 @@
   padding: 1rem 0;
   width: 10rem;
   color: $c-light;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: opacity 0.3s linear, transform 0.3s linear;
 
   @media (min-width: $stop-scaling) {
     top: -5px;
@@ -69,6 +72,11 @@
     width: 100%;
     height: auto;
   }
+}
+
+body.is-loaded .page-header__logo {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .page-header__toggler {
@@ -177,6 +185,8 @@
   font-size: 1.2rem;
   line-height: 1.0418;
   color: $c-light;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.2s;
 
   @media (min-width: $stop-scaling) {
     font-size: 12px;
@@ -293,8 +303,10 @@
   }
 }
 
-.page-header__social {
+.page-header__social  {
   margin-left: 4.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.5s;
 
   @media (min-width: $stop-scaling) {
     margin-left: 48px;

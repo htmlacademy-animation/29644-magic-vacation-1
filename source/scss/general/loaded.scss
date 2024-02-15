@@ -1,0 +1,25 @@
+@import "keyframes.scss";
+
+body.is-loaded {
+
+  .screen__footer {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .page-header__menu {
+    opacity: 1;
+  }
+
+  .page-header__social {
+    opacity: 1;
+  }
+
+  .social-block__toggler:before {
+    animation: 1.4s cubic-bezier(0, 1.8, 1, 1.2)  0.3s spring-social;
+  }
+
+  .page-header__menu a.active:after {
+    animation: 0.5s linear  0.2s width-header-link;
+  }
+}
