@@ -16,10 +16,36 @@ body.is-loaded {
   }
 
   .social-block__toggler:before {
-    animation: 1.4s cubic-bezier(0, 1.8, 1, 1.2)  0.3s spring-social;
+    animation: 1.4s cubic-bezier(0, 1.8, 1, 1.2) 0.3s spring-social;
   }
 
   .page-header__menu a.active:after {
-    animation: 0.5s linear  0.2s width-header-link;
+    animation: width-header-link 0.5s linear 0.2s;
   }
+
+  @for $i from 1 through 4 {
+    .rules__item:nth-child(#{$i}):before {
+      animation: spring-bullet 1s cubic-bezier(0, 1.8, 1, 1.2) (250ms * $i);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @for $l from 1 through 4 {
+    .rules__item:nth-child(#{$l}) p {
+      animation: show-from-opacity 750ms cubic-bezier(0.29, 0.03, 1, 1) (250ms * $l);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .rules__link.btn {
+    animation: color-opacity 750ms ease-in 1750ms;
+    animation-fill-mode: forwards;
+  }
+
+  .rules__link.btn:before {
+    animation: increase-width 500ms ease-in 1750ms;
+    animation-fill-mode: forwards;
+  }
+
+
 }
