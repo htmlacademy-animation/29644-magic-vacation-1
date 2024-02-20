@@ -9,6 +9,37 @@
   }
 }
 
+@keyframes spring-bullet {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes show-from-opacity {
+  from {
+    transform: translateX(2%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes color-opacity {
+  from {
+    color: rgba(0,0,0,0);
+  }
+  to {
+    color: rgba(0,0,0,1);
+  }
+}
+
 @keyframes width-header-link {
   from {
     right: 0;
@@ -18,5 +49,16 @@
     width: 100%;
     right: auto;
     left: 0;
+  }
+}
+
+@keyframes increase-width {
+  from {
+    width: 20%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
   }
 }
